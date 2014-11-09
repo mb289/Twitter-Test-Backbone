@@ -6,6 +6,20 @@
         <title></title>
     </head>
     <body>
+
+    <h3>Testing Tweeting with Backbone</h3>
+
+        <form id="new-tweet">
+            <label>Author:</label><input id="author-name" name="author-name" type="text"/> <br> 
+            <label>Status:</label><input id="status-update" name="status-update" type="text"/>  
+        </form>
+            <hr>
+    <div id="tweets-container"></div>
+    
+<script type="text/template" id="tweet-template">
+    <span class="author"><%=author%>:</span>
+     <span class="status-update"><%=status%>:</span>
+</script>
         <script type="text/javascript" src="./bower_components/Loader/loader.js" id="loaderjs" data-app="./js/app.js"></script>
     </body>
     </html>
